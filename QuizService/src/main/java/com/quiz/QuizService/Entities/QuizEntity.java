@@ -3,6 +3,8 @@ package com.quiz.QuizService.Entities;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.List;
+
 @Entity
 @Data
 @Getter
@@ -16,6 +18,15 @@ public class QuizEntity {
     private Long id;
     private String title;
 
+    public List<QuestionEntity> getQuestionEntity() {
+        return questionEntity;
+    }
+
+    public void setQuestionEntity(List<QuestionEntity> questionEntity) {
+        this.questionEntity = questionEntity;
+    }
+
+    transient private List<QuestionEntity> questionEntity;
     public Long getId() {
         return id;
     }

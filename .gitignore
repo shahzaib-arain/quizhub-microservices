@@ -1,0 +1,7 @@
+**/.idea/
+**/.mvn/
+**/target/
+**/application.properties
+**/application.yml
+**/pom.xml
+**/*.iml
